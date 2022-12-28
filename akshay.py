@@ -25,3 +25,7 @@ def getKey(obj: dict):
     else:
         nestedKey = getKey(obj)
         return getNestedValue(obj[nestedKey], key, False)
+    if __name__ == '__main__':
+    obj = {'a': {'b': {'c': 'd'}}}
+    value = getNestedValue(obj, 'c')
+    print(value))
