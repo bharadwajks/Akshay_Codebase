@@ -40,3 +40,4 @@ resource "google_sql_user" "users" {
   host     = var.db_host
   password = var.db_password
 }
+
