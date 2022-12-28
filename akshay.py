@@ -16,5 +16,5 @@ def getKey(obj: dict):
     # print(obj, key, isFound)
     if type(obj) is not dict and not isFound:
         return None
-    if (isFound or (key in obj.keys())) 
+    if (isFound or (key in obj.keys())) :
         if type(obj[key]) is dict:
