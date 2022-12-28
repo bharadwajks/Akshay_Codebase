@@ -25,6 +25,7 @@ resource "google_compute_autoscaler" "team3" {
 resource "google_compute_instance_template" "compute-engine" {
      depends_on = [
         google_sql_database_instance.database,
+          
       
     ]
   name                    = var.template_name
