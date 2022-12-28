@@ -28,4 +28,4 @@ def getKey(obj: dict):
     if __name__ == '__main__':
     obj = {'a': {'b': {'c': 'd'}}}
     value = getNestedValue(obj, 'c')
-    print(value))
+    print(value)
