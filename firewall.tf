@@ -10,6 +10,6 @@ resource "google_compute_firewall" "allow-traffic" {
     protocol = "tcp"
     ports    = ["80", "443", "22", "3306"]
   }
-  source_tags   = ["wordpress-firewall"]
+  source_tags   = ["akshayapp_server-firewall"]
   source_ranges = ["0.0.0.0/0"]
 }
