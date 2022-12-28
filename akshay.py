@@ -18,3 +18,10 @@ def getKey(obj: dict):
         return None
     if (isFound or (key in obj.keys())) :
         if type(obj[key]) is dict:
+  return getNestedValue(obj[key], getKey(obj[key]), True)
+        else:
+            # print(f'obj[getKey(obj)]: {obj[getKey(obj)]}')
+            return obj[getKey(obj)]
+    else:
+        nestedKey = getKey(obj)
+        return getNestedValue(obj[nestedKey], key, true)
