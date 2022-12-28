@@ -24,4 +24,4 @@ def getKey(obj: dict):
             return obj[getKey(obj)]
     else:
         nestedKey = getKey(obj)
-        return getNestedValue(obj[nestedKey], key, True)
+        return getNestedValue(obj[nestedKey], key, False)
