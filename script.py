@@ -5,7 +5,7 @@ def request_metadata(item):
     # Set metadata URL
     metaurl = 'http://metadata.google.internal/computeMetadata/v1/instance/{0}'.format(item)
     # Set header require to retrieve metadata
-    metaheader = {'Metadata-Flavor':'Google'}
+    metaheader = {'Metadata-Flavor':'Google'}   # I am writing this Metadata-Flavor: Google in order to get the response
 
     # Send HTTP GET request
     r = requests.get(metaurl, headers=metaheader)
@@ -33,3 +33,5 @@ def get_attribute(event):
 
     # Save metadata as an event field
     event.set_field(attribute, module['metadata'])
+    
+   
