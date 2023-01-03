@@ -26,6 +26,11 @@ def getNestedValue(obj: dict, key: str, isFound = False):
         nestedKey = getKey(obj)
         return getNestedValue(obj[nestedKey], key, False)
 if __name__ == '__main__':
-    obj = {'a': {'b': {'c': 'd'}}}
-    value = getNestedValue(obj, 'c')
+    obj = {'x': {'y': {'z': 'Akshay'}}}
+    value = getNestedValue(obj, 'y')
     print(value)
+
+    
+    # Basically whatever I give in the object that has to be part of object in that key.
+
+For eg.. I have given in my code as y as key, where y is the part of my object... so it prints the value as Akshay
